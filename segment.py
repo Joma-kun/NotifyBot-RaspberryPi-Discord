@@ -4,7 +4,7 @@ import importlib
 
 GPIO.setmode(GPIO.BCM)
 sw_pin = 4
-GPIO.setup(sw_pin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+GPIO.setup(sw_pin, GPIO.OUT, pull_up_down=GPIO.PUD_UP)
 
 global flag
 flag = 0
