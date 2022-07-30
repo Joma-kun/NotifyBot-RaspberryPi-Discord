@@ -10,7 +10,7 @@ sw_pin = 4
 GPIO.setup(sw_pin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
 #7seg
-seg_num = {"A": 17, "B": 27, "C": 22, "D": 23, "E": 24, "F": 24, "G": 5}
+seg_num = {"A": 17, "B": 27, "C": 22, "D": 23, "E": 24, "F": 25, "G": 5}
 GPIO.setup(seg_num["A"], GPIO.OUT, initial=GPIO.LOW)
 GPIO.setup(seg_num["B"], GPIO.OUT, initial=GPIO.LOW)
 GPIO.setup(seg_num["C"], GPIO.OUT, initial=GPIO.LOW)
@@ -29,7 +29,6 @@ def print_calling():
         GPIO.output(seg_num["E"], GPIO.HIGH)
         GPIO.output(seg_num["F"], GPIO.HIGH)
         GPIO.output(seg_num["G"], GPIO.LOW)
-        GPIO.add_event_detect(sw_pin, GPIO.FALLING, callback=checkSW, bouncetime=200)
         if flag == 2:
             break
         time.sleep(0.5)
@@ -41,7 +40,6 @@ def print_calling():
         GPIO.output(seg_num["E"], GPIO.HIGH)
         GPIO.output(seg_num["F"], GPIO.HIGH)
         GPIO.output(seg_num["G"], GPIO.HIGH)
-        GPIO.add_event_detect(sw_pin, GPIO.FALLING, callback=checkSW, bouncetime=200)
         if flag == 2:
             break
         time.sleep(0.5)
@@ -53,7 +51,6 @@ def print_calling():
         GPIO.output(seg_num["E"], GPIO.HIGH)
         GPIO.output(seg_num["F"], GPIO.HIGH)
         GPIO.output(seg_num["G"], GPIO.LOW)
-        GPIO.add_event_detect(sw_pin, GPIO.FALLING, callback=checkSW, bouncetime=200)
         if flag == 2:
             break
         time.sleep(0.5)
@@ -65,7 +62,6 @@ def print_calling():
         GPIO.output(seg_num["E"], GPIO.HIGH)
         GPIO.output(seg_num["F"], GPIO.HIGH)
         GPIO.output(seg_num["G"], GPIO.LOW)
-        GPIO.add_event_detect(sw_pin, GPIO.FALLING, callback=checkSW, bouncetime=200)
         if flag == 2:
             break
         time.sleep(0.5)
@@ -77,7 +73,6 @@ def print_calling():
         GPIO.output(seg_num["E"], GPIO.HIGH)
         GPIO.output(seg_num["F"], GPIO.HIGH)
         GPIO.output(seg_num["G"], GPIO.LOW)
-        GPIO.add_event_detect(sw_pin, GPIO.FALLING, callback=checkSW, bouncetime=200)
         if flag == 2:
             break
         time.sleep(0.5)
@@ -89,7 +84,6 @@ def print_calling():
         GPIO.output(seg_num["E"], GPIO.HIGH)
         GPIO.output(seg_num["F"], GPIO.LOW)
         GPIO.output(seg_num["G"], GPIO.HIGH)
-        GPIO.add_event_detect(sw_pin, GPIO.FALLING, callback=checkSW, bouncetime=200)
         if flag == 2:
             break
         time.sleep(0.5)
@@ -101,7 +95,6 @@ def print_calling():
         GPIO.output(seg_num["E"], GPIO.HIGH)
         GPIO.output(seg_num["F"], GPIO.HIGH)
         GPIO.output(seg_num["G"], GPIO.LOW)
-        GPIO.add_event_detect(sw_pin, GPIO.FALLING, callback=checkSW, bouncetime=200)
         if flag == 2:
             break
         time.sleep(0.5)
@@ -116,7 +109,6 @@ def print_wait():
         GPIO.output(seg_num["E"], GPIO.LOW)
         GPIO.output(seg_num["F"], GPIO.HIGH)
         GPIO.output(seg_num["G"], GPIO.LOW)
-        GPIO.add_event_detect(sw_pin, GPIO.FALLING, callback=checkSW, bouncetime=200)
         if flag == 0:
             break
         time.sleep(0.5)
@@ -128,7 +120,6 @@ def print_wait():
         GPIO.output(seg_num["E"], GPIO.HIGH)
         GPIO.output(seg_num["F"], GPIO.HIGH)
         GPIO.output(seg_num["G"], GPIO.HIGH)
-        GPIO.add_event_detect(sw_pin, GPIO.FALLING, callback=checkSW, bouncetime=200)
         if flag == 0:
             break
         time.sleep(0.5)
@@ -140,7 +131,6 @@ def print_wait():
         GPIO.output(seg_num["E"], GPIO.HIGH)
         GPIO.output(seg_num["F"], GPIO.HIGH)
         GPIO.output(seg_num["G"], GPIO.LOW)
-        GPIO.add_event_detect(sw_pin, GPIO.FALLING, callback=checkSW, bouncetime=200)
         if flag == 0:
             break
         time.sleep(0.5)
@@ -152,7 +142,6 @@ def print_wait():
         GPIO.output(seg_num["E"], GPIO.HIGH)
         GPIO.output(seg_num["F"], GPIO.HIGH)
         GPIO.output(seg_num["G"], GPIO.HIGH)
-        GPIO.add_event_detect(sw_pin, GPIO.FALLING, callback=checkSW, bouncetime=200)
         if flag == 0:
             break
         time.sleep(0.5)
