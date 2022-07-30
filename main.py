@@ -23,6 +23,7 @@ try:
         elif segment.flag == 2:
             segment.print_wait()
         else:
+            segment.print_none()
             time.sleep(1)
 
 except KeyboardInterrupt:

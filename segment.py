@@ -145,3 +145,12 @@ def print_wait():
         if flag == 0:
             break
         time.sleep(0.5)
+
+def print_none():
+    GPIO.output(seg_num["A"], GPIO.LOW)
+    GPIO.output(seg_num["B"], GPIO.LOW)
+    GPIO.output(seg_num["C"], GPIO.LOW)
+    GPIO.output(seg_num["D"], GPIO.LOW)
+    GPIO.output(seg_num["E"], GPIO.LOW)
+    GPIO.output(seg_num["F"], GPIO.LOW)
+    GPIO.output(seg_num["G"], GPIO.LOW)
