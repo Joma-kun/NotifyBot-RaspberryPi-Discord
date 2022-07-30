@@ -12,7 +12,7 @@ GPIO.setup(sw_pin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
 #led
 led_pin = 21
-GPIO.setup(sw_pin, GPIO.IN, pull_up_down=GPIO.LOW)
+GPIO.setup(sw_pin, GPIO.IN, initial=GPIO.LOW)
 
 
 def checkSW(pin):
