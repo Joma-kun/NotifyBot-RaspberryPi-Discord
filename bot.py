@@ -4,7 +4,7 @@ import segment
 
 #you can change here acordingto your environment
 TOKEN = "XXXXXXXXXXXXXXXXXXXXXXXXX"
-CHANNELID =1002928960591646802 
+CHANNELID = 123456789123456789
 
 client = discord.Client()
 
