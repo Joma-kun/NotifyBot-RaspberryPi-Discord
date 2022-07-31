@@ -2,7 +2,7 @@ import discord
 import time
 import segment
 
-#you can change here acordingto your environment
+#you can change here acording to your environment
 TOKEN = "XXXXXXXXXXXXXXXXXXXXXXXXX"
 CHANNELID = 123456789123456789
 
