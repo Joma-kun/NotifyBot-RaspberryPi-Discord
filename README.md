@@ -1,5 +1,6 @@
 # NotifyBot-RaspberryPi-Discord
 大学の課題で作成したラズベリーパイを用いた通知ボットです  
+[動作の様子](https://youtu.be/ys_DPAZO4Pg)  
 
 ## 授業目標
 GPIOによる入出力を含んだオリジナルシステムの開発
